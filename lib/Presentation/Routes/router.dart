@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telebirr/Presentation/Pages/Onboarding/onboarding_screen.dart';
 import 'package:telebirr/Presentation/Pages/Splash/splash_screen.dart';
 
 class GeneratedRoute {
@@ -6,6 +7,8 @@ class GeneratedRoute {
     switch (settings.name) {
       case SplashScreen.route:
         return MaterialPageRoute(builder: (_) => const SplashScreen());
+      case OnBoardingScreen.route:
+        return MaterialPageRoute(builder: (_) => const OnBoardingScreen());
 
       default:
         return MaterialPageRoute(
