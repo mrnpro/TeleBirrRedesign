@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 class CustomTheme {
   final ThemeData _lightTheme = ThemeData(
+      primaryColor: const Color(0xFF008BE5),
+      scaffoldBackgroundColor: Colors.white,
       fontFamily: GoogleFonts.poppins().fontFamily,
       textTheme: const TextTheme(
         headline4: TextStyle(
