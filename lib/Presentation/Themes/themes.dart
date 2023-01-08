@@ -4,8 +4,25 @@ import 'package:google_fonts/google_fonts.dart';
 class CustomTheme {
   final ThemeData _lightTheme = ThemeData(
       primaryColor: const Color(0xFF008BE5),
+      colorScheme: const ColorScheme(
+        brightness: Brightness.light,
+        primary: Color(0xFF008BE5),
+        onPrimary: Color(0xFF005EB2),
+        secondary: Color.fromRGBO(247, 247, 247, 10),
+        onSecondary: Color(0xF4F4F4CC),
+        error: Colors.red,
+        onError: Colors.red,
+        background: Colors.white,
+        onBackground: Colors.white,
+        surface: Colors.white,
+        onSurface: Colors.white,
+      ),
       scaffoldBackgroundColor: Colors.white,
       fontFamily: GoogleFonts.poppins().fontFamily,
+      inputDecorationTheme: InputDecorationTheme(
+          contentPadding:
+              const EdgeInsets.symmetric(vertical: 10, horizontal: 14),
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(8))),
       textTheme: const TextTheme(
         headline4: TextStyle(
           fontSize: 33,
