@@ -39,6 +39,7 @@ dependencies:
   google_fonts: ^3.0.1
   flutter_bloc: ^8.1.1
   equatable: ^2.0.5
+  svg_icon: ^0.0.1
    
 
 dev_dependencies:
