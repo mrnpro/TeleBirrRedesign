@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:telebirr/Presentation/Logics/cubit/splash_cubit.dart';
 
 import 'package:telebirr/Presentation/Pages/Onboarding/onboarding_screen.dart';
 
 import 'package:telebirr/Presentation/SizeConfig/size_config.dart';
 
 import '../../../CommonWidgets/TeleBirrLogo/telebirr_logo.dart';
+import '../../../Logics/SplashCubit/splash_cubit.dart';
 
 class SplashBody extends StatefulWidget {
   const SplashBody({super.key});
