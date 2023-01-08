@@ -7,10 +7,8 @@ class OnBoardingScreen extends StatelessWidget {
   static const String route = "/onBoarding";
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-      child: Scaffold(
-        body: OnBoardingBody(),
-      ),
+    return const Scaffold(
+      body: SafeArea(child: OnBoardingBody()),
     );
   }
 }
