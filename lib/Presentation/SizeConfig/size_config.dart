@@ -32,3 +32,9 @@ Widget addVerticalSpace({double size = 10}) {
     height: size,
   );
 }
+
+Widget addHorizontalSpace({double size = 10}) {
+  return SizedBox(
+    width: size,
+  );
+}
