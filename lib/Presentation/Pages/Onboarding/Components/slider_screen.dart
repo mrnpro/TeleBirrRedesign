@@ -20,7 +20,7 @@ class SliderScreen extends StatelessWidget {
     return SizedBox(
       child: Column(children: [
         Container(
-          padding: const EdgeInsets.only(top: 16, left: 16, right: 16),
+          padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
           decoration: BoxDecoration(
             border: Border.all(color: _theme.primaryColor),
             borderRadius: BorderRadius.circular(27),

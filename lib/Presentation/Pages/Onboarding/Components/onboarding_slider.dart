@@ -6,25 +6,28 @@ class OnBoardingSlider extends StatelessWidget {
   const OnBoardingSlider({
     Key? key,
     required ThemeData theme,
+    required this.controller,
+    required this.onPageChanged,
   })  : _theme = theme,
         super(key: key);
 
   final ThemeData _theme;
-
+  final PageController controller;
+  final Function(int) onPageChanged;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 500,
-      child: Expanded(
-        child: PageView(
-          children: [
-            FirstSlider(theme: _theme),
-            SecondSlider(theme: _theme),
-            ThirdSlider(
-              theme: _theme,
-            )
-          ],
-        ),
+      child: PageView(
+        onPageChanged: onPageChanged,
+        controller: controller,
+        children: [
+          FirstSlider(theme: _theme),
+          SecondSlider(theme: _theme),
+          ThirdSlider(
+            theme: _theme,
+          )
+        ],
       ),
     );
   }
