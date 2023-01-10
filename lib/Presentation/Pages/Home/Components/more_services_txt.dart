@@ -11,7 +11,7 @@ class MoreServicesTxt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.only(top: 16, left: 16),
       child: Align(
           alignment: Alignment.centerLeft,
           child: Text("More Services", style: theme.textTheme.headline6)),
