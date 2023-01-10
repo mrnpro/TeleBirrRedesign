@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telebirr/Presentation/Pages/BottomNavigation/bottom_nav_bar.dart';
 import 'package:telebirr/Presentation/Pages/CreateAccount/create_account_screen.dart';
 import 'package:telebirr/Presentation/Pages/Home/home_screen.dart';
 import 'package:telebirr/Presentation/Pages/Login/login_screen.dart';
@@ -21,6 +22,9 @@ class GeneratedRoute {
         return MaterialPageRoute(builder: (_) => const QuickCreateScreen());
       case HomeScreen.route:
         return MaterialPageRoute(builder: (_) => const HomeScreen());
+      case BottomNavBar.route:
+        return MaterialPageRoute(builder: (_) => const BottomNavBar());
+
       default:
         return MaterialPageRoute(
             builder: (_) => const Center(
