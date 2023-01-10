@@ -20,14 +20,13 @@ class _SplashBodyState extends State<SplashBody> {
   @override
   void initState() {
     _splashCubit = SplashCubit();
-    _splashCubit.startTimer();
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider.value(
-      value: _splashCubit,
+      value: _splashCubit..startTimer(),
       child: BlocListener<SplashCubit, SplashState>(
         listener: (context, state) {
           if (state is ReadyToStartState) {
