@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:svg_icon/svg_icon.dart';
+
 import 'package:telebirr/Presentation/Pages/Home/Components/home_body.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -8,8 +8,6 @@ class HomeScreen extends StatelessWidget {
   static const String route = "/homeScreen";
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: HomeBody(),
-    );
+    return const HomeBody();
   }
 }
