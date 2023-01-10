@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telebirr/Presentation/Pages/BottomNavigation/bottom_nav_bar.dart';
 import 'package:telebirr/Presentation/Pages/Home/home_screen.dart';
 
 import '../../../CommonWidgets/DefaultButton/default_button.dart';
@@ -72,7 +73,7 @@ class LoginForm extends StatelessWidget {
         DefaultButton(
             btnTxt: "Login",
             onPressed: () {
-              Navigator.pushNamed(context, HomeScreen.route);
+              Navigator.pushNamed(context, BottomNavBar.route);
             })
       ],
     ));
