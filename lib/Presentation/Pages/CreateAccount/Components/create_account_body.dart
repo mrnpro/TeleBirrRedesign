@@ -7,6 +7,8 @@ import 'package:telebirr/Presentation/CommonWidgets/TeleBirrLogo/telebirr_logo.d
 import 'package:telebirr/Presentation/Pages/QuickCreate/quick_create_screen.dart';
 import 'package:telebirr/Presentation/SizeConfig/size_config.dart';
 
+import '../../BottomNavigation/bottom_nav_bar.dart';
+
 class CreateAccountBody extends StatelessWidget {
   const CreateAccountBody({super.key});
 
@@ -40,7 +42,7 @@ class CreateAccountBody extends StatelessWidget {
               DefaultButton(
                   btnTxt: "Quick Create Account",
                   onPressed: () {
-                    Navigator.pushNamed(context, QuickCreateScreen.route);
+                    Navigator.pushNamed(context, BottomNavBar.route);
                   }),
               addVerticalSpace(),
               DefaultButton(btnTxt: "Self-Create Account", onPressed: () {}),
