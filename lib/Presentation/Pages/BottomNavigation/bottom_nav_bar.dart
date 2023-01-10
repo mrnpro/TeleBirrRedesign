@@ -11,7 +11,7 @@ class BottomNavBar extends StatelessWidget {
     ThemeData theme = Theme.of(context);
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
-          unselectedItemColor: theme.primaryColor,
+          unselectedItemColor: const Color(0xFF62BBFF),
           items: const [
             BottomNavigationBarItem(
                 icon: SvgIcon("assets/icons/wallet.svg"), label: "wallet"),
