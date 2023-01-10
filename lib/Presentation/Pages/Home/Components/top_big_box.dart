@@ -62,8 +62,8 @@ class SmallAccountBox extends StatelessWidget {
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
     return Container(
-      padding: const EdgeInsets.all(15),
-      height: 104,
+      padding: const EdgeInsets.all(11),
+      height: 106,
       width: SizeConfig.getProportionalWidth(inputWidth: 2.4),
       decoration: const BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.all(kRadius)),
